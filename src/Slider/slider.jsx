@@ -17,13 +17,14 @@ const Slider = () => {
                 modules={[Navigation, Pagination, Autoplay]}
                 navigation
                 pagination={{ clickable: true }}
-                autoplay={{ delay: 5000 }}
+                autoplay={{ delay: 4000 }}
+                speed={4000}
                 loop
                 className="mySwiper"
             >
                 {/* Slide 1 */}
                 <SwiperSlide>
-                    <div className="slide-content" style={{ backgroundImage: "url('/path-to-image.jpg')" }}>
+                    <div className="slide-content" style={{ backgroundImage: "url('/public/images/slider1.webp')" }}>
                         <div className="overlay">
                             <h1>Seamless capital market investment</h1>
                             <button className="cta-button">Open an Account Now</button>
@@ -33,7 +34,7 @@ const Slider = () => {
 
                 {/* Slide 2 */}
                 <SwiperSlide>
-                    <div className="slide-content" style={{ backgroundImage: "url('/path-to-second-image.jpg')" }}>
+                    <div className="slide-content" style={{ backgroundImage: "url('/public/images/slider2.webp')" }}>
                         <div className="overlay">
                             <h1>Stock trade at the palm of your hand</h1>
                             <button className="cta-button">Learn More</button>
@@ -41,7 +42,7 @@ const Slider = () => {
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <div className="slide-content" style={{ backgroundImage: "url('/path-to-second-image.jpg')" }}>
+                    <div className="slide-content" style={{ backgroundImage: "url('/public/images/slider3.jpg')" }}>
                         <div className="overlay">
                             <h1>Stock trade at the palm of your hand</h1>
                             <button className="cta-button">Learn More</button>
@@ -49,7 +50,7 @@ const Slider = () => {
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
-                <div className="slide-content" style={{ backgroundImage: "url('/path-to-second-image.jpg')" }}>
+                <div className="slide-content" style={{ backgroundImage: "url('/public/images/slider2.webp')" }}>
                     <div className="overlay">
                         <h1>Stock trade at the palm of your hand</h1>
                         <button className="cta-button">Learn More</button>
@@ -57,7 +58,7 @@ const Slider = () => {
                 </div>
             </SwiperSlide>
             <SwiperSlide>
-                <div className="slide-content" style={{ backgroundImage: "url('/path-to-second-image.jpg')" }}>
+                <div className="slide-content" style={{ backgroundImage: "url('/public/images/slider1.webp')" }}>
                     <div className="overlay">
                         <h1>Stock trade at the palm of your hand</h1>
                         <button className="cta-button">Learn More</button>

@@ -1,9 +1,7 @@
 .slider-container {
     width: 100vw;
     height: 100vh;
-}
-.mySwiper{
-    background-color: rgba(83, 91, 242, 0.36);
+    position: relative;
 }
 
 .slide-content {
@@ -30,4 +28,48 @@
     font-size: 16px;
     cursor: pointer;
     border-radius: 5px;
+}
+
+/* Navigation arrows */
+.swiper-button-next,
+
+.swiper-button-prev {
+    color: #fff; /* Arrow color */
+    border: 2px solid #fff; /* Border to match the circular look */
+    background-color: transparent; /* Transparent background */
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 20px; /* Position close to the right edge */
+    z-index: 10;
+    transform: none; /* Disable default Swiper transform */
+    margin-left: 90%;
+}
+
+/* Stack navigation buttons vertically */
+.swiper-button-prev {
+    top: 50%; /* Align center */
+    margin-top: -30px; /* Adjust upward for vertical spacing */
+}
+.swiper-button-next {
+    top: 50%; /* Align center */
+    margin-top: 30px; /* Adjust downward for vertical spacing */
+    margin-right: 5%;
+}
+
+/* Remove default Swiper arrow styles */
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    font-size: 18px; /* Customize arrow size */
+}
+
+/* Hover effect */
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #ffd700; /* Gold color on hover */
 }
